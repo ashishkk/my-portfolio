@@ -1,1 +1,10 @@
-<h3>Hello from app component</h3>
+<div class="topnav">
+
+<nav mat-tab-nav-bar class="topnav avatar">
+    <a [className]="location.path()=='/home'?  'mat-tab active': 'mat-tab'" routerLink="home">HOME</a>
+    <a [className]="location.path()=='/education'?  'mat-tab active': 'mat-tab'" routerLink="education">EDUCATION</a>
+    <a [className]="location.path()=='/work'?  'mat-tab active': 'mat-tab'" routerLink="work">WORK</a>
+    <a [className]="location.path()=='/contact'?  'mat-tab active': 'mat-tab'" routerLink="contact">CONTACT</a>
+</nav>
+<div class="avatar"></div>
+</div>

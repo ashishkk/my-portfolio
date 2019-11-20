@@ -1,0 +1,35 @@
+.container {
+    max-width: 1000px;
+    margin: 5.5rem auto;
+    padding: 0 3%;
+    .small{
+        text-align: left;
+    }
+       
+}
+
+.description {
+    background-color: #FFF;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #555;
+}
+.avatar{
+    background-image: url(../../assets/images/login.jpg);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 3px;
+    margin-bottom: -50px;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35); 
+}
+
+.small{
+    text-align: left;
+}
+    

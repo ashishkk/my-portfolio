@@ -1,0 +1,85 @@
+<h3 class="Heading-sc-3p94va-0 fjaqlf">Where I've Worked</h3>
+<div class="jobs__StyledTabs-sc-13kygjg-1 bNGezA">
+    <ul role="tablist" class="jobs__StyledTabList-sc-13kygjg-2 Mllzu">
+        <li *ngFor="let work of works">
+            <button role="tab" aria-selected="true" aria-controls="tab0" id="tab0" tabindex="0" 
+                (click)="selectWork(work.companyName)"
+                class="jobs__StyledTabButton-sc-13kygjg-3 jMyOUx"><span>{{work.companyName}}</span>
+            </button>
+        </li>
+    </ul>
+
+<div class="jobs__StyledContent-sc-13kygjg-5 jvzDjX">
+    <div id="job0" role="tabpanel" tabindex="0" aria-labelledby="job0" aria-hidden="false" class="jobs__StyledTabContent-sc-13kygjg-6 jzThFw">
+    <div *ngFor="let duration of selectedWork.duration">
+        <h4 class="jobs__StyledJobTitle-sc-13kygjg-7 hqEWkz">
+            <span> {{duration.title}}</span>
+            <span class="jobs__StyledCompany-sc-13kygjg-8 cSfzvM">
+                <span>&nbsp;@&nbsp;</span>
+                <a href="{{selectedWork.url}}" target="_blank" rel="nofollow noopener noreferrer">{{selectedWork.companyName}}</a>
+            </span>
+        </h4>
+    
+        <h5 class="jobs__StyledJobDetails-sc-13kygjg-9 fXkgCN"><span>{{duration.workDur}}</span></h5>
+        <div>
+            <ul>
+                <li *ngFor="let cont of duration.content">{{cont}}</li>
+            </ul>
+        </div>  
+    </div>      
+    </div>
+        
+    <!-- <div id="job1" role="tabpanel" tabindex="2" aria-labelledby="job2" aria-hidden="true" class="jobs__StyledTabContent-sc-13kygjg-6 kVfmUn">
+        <h4 class="jobs__StyledJobTitle-sc-13kygjg-7 hqEWkz">
+            <span>Ui Developer</span>
+            <span
+                class="jobs__StyledCompany-sc-13kygjg-8 cSfzvM">
+                <span>&nbsp;@&nbsp;</span>
+                <a href="http://www.nemoits.com" target="_blank" rel="nofollow noopener noreferrer">NEMO IT Solutions, Inc.</a>
+            </span>
+        </h4>
+        <h5 class="jobs__StyledJobDetails-sc-13kygjg-9 fXkgCN"><span>Mar 2017 - Present</span></h5>
+        <div>
+            <ul>
+                <li>Developed cutting edge User interfaces for some Major IT gaints in the USA.</li>
+                <li>Built and Supported the Contact Center Application for Major Airline Company leveraging third-party and internal APIs</li>
+                <li>Architected and implemented the front-end using AngularJS, KnockOutJS, ES6, BootStrap, HTML5, CSS3, GIT, GITHUB.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="job2" role="tabpanel" tabindex="0" aria-labelledby="job3" aria-hidden="true"  class="jobs__StyledTabContent-sc-13kygjg-6 kVfmUn">
+        <h4 class="jobs__StyledJobTitle-sc-13kygjg-7 hqEWkz">
+            <span>Applications Developer</span>
+            <span class="jobs__StyledCompany-sc-13kygjg-8 cSfzvM">
+                <span>&nbsp;@&nbsp;</span>
+                <a href="https://go.umhb.edu" target="_blank" rel="nofollow noopener noreferrer">University of Mary Hardin-Baylor</a>
+            </span>
+        </h4>
+        <h5 class="jobs__StyledJobDetails-sc-13kygjg-9 fXkgCN"><span>Feb 2016 - Dec 2016</span></h5>
+        <div>
+            <ul>
+                <li>Analyze, Design, Develop, Test, Deploy, and Support for Resturant Management System</li>
+                <li>Worked closely with designers and management team to develop, document, and manage the Resturant's website using Mayborn Student Union building</li>
+            </ul>
+        </div>
+    </div>
+        
+    <div id="job3" role="tabpanel" tabindex="0" aria-labelledby="job4" aria-hidden="true" class="jobs__StyledTabContent-sc-13kygjg-6 kVfmUn">
+        <h4 class="jobs__StyledJobTitle-sc-13kygjg-7 hqEWkz">
+            <span>Associate</span>
+            <span class="jobs__StyledCompany-sc-13kygjg-8 cSfzvM">
+                <span>&nbsp;@&nbsp;</span>
+                <a href="https://www.amazon.com" target="_blank" rel="nofollow noopener noreferrer">Amazon Devlepment Center, India</a>
+            </span>
+        </h4>
+        <h5 class="jobs__StyledJobDetails-sc-13kygjg-9 fXkgCN"><span>Aug 2013 - Dec 2014</span></h5>
+        <div>
+            <ul>
+                <li>Supported North America domain.</li>
+                <li>Troubleshoot issue with the Kindle Device.</li>
+                <li>Debug and provide resolution to customer on call.</li>
+            </ul>
+        </div>
+    </div> -->
+</div>
